@@ -1,0 +1,57 @@
+.origen{
+
+    background-color: azure;
+	margin-bottom: 35px;
+	
+
+}
+
+
+#slider {
+	background: #FFFFFF;
+	border: 1px solid #7FFFD4;
+	margin-top: 30px;
+	margin-left: 250px;
+    margin-right: 250px;
+	margin-bottom: 70px;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+table {
+	overflow:scroll;
+	width: 95%;
+	height: auto;
+	margin-left: 35px;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background: linear-gradient(45deg, rgb(24,119,242), lightskyblue);
+	color: #fff;
+ }
+ td, th {
+	background: #fff;
+	color: #000;
+ }
+ #scroll {
+	overflow:scroll;
+	height:200px;
+	
+}
+#scroll table {
+  
+   background-color:lightgray;
+}
+.flotar{
+	float: left;
+	width: 50%;
+
+}
+label{
+	text-align: left;
+}
+.limpiar{
+	clear: both;
+}

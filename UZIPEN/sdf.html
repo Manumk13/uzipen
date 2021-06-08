@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indus HTML5 Free Responsive Template | Template stock</title>
+
+    <link rel="stylesheet" type="text/css" href="view/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="view/css/et-lineicon.css" />
+    <link rel="stylesheet" type="text/css" href="view/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="view/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="view/css/prop.css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700" rel="stylesheet"
+        type="text/css" />
+
+</head>
+<section id="home">
+    <div class="content">
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+            <div id="countdown_dashboard" class="home-main container">
+                <div class="row">
+                    <div class="logo">
+                        <img src="view/images/logo.png" alt="logo">
+                       
+                        <h1>¿En que tabla desea introducir un nuevo registro?</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="origen">
+                        <h2>Registra el nuevo producto</h2>
+
+                        <form id="formulario" action="index.php?cmd=nuevoClientes" method="post">
+
+                            <label>Introduce el nombre del cliente: <input placeholder="Nombre del cliente" type="text"
+                                    name="nombreCliente" id="cliente"></label><br><br>
+                            <label>Introduce la dirección del cliente: <input placeholder="Dirección del cliente"
+                                    type="text" name="direccion" id="direccion"></label><br><br>
+                            <label>Introduce el horario del cliente: <input placeholder="Horario del cliente"
+                                    name="horario" type="" id="precio"></label> <br />
+                            <input type="submit" name="registroC" value="Enviar">
+                        </form>
+                    </div>
+                    <div class="origen">
+                        <h3>Lista de clientes</h3>
+                        <table class="tabla">
+                            <thead>
+                                <tr>
+                                    <th>Nombre Cliente</th>
+                                    <th>Dirección</th>
+                                    <th>Horario</th>
+                                </tr>    
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>'.$mostrar['nombre_cliente'].' </td>
+                                    <td>'. $mostrar['direccion'].' </td>
+                                    <td>'.$mostrar['horario'].' </td>
+                                   
+                                </tr>        
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    ';
+                    mysqli_close($conexion);
+                    echo'
+                </div>
+            </div> <!-- END ROW -->
+        </div> <!-- END COUNTDOWN -->
+    </div> <!-- LARGE HEADER -->
+    
+</section>';
+
+<footer class="footer">
+    <div class="container text-center">
+
+        <div class="row">
+            <p class="copyright">Copyright© 2016 <a href="http://templatestock.co">Template Stock</a></p>
+        </div>
+    </div>
+</footer>
+<!-- JAVASCRIPTS -->
+<script src="view/js/jquery.min.js"></script>
+<script src="view/js/jquery.lwtCountdown-1.0.js"></script>
+<script src="view/js/jquery.stellar.min.js"></script>
+<script src="view/js/jquery.nicescroll.min.js"></script>
+<script src="view/js/animated.js"></script>
+<script src="view/js/main.js"></script>
+</body>
+
+</html>
